@@ -1,0 +1,117 @@
+* {
+  margin: 0px;
+  padding: 0px;
+}
+
+html,
+body {
+  --black: hsl(240, 6%, 13%);
+  --gray: hsl(240, 9%, 89%);
+
+  
+  font-family: 'Oswald', sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+body {
+  display: grid;
+  place-items:center;
+  background: url(image/Desktop.png)no-repeat;  
+  animation: colors 15s ease infinite;
+}
+
+
+
+@keyframes colors{
+  0% {
+    background-color: #8E05C2;
+  }
+  50% {
+    background-color: #9D84B7;
+  }
+  75%{
+    background-color: #39A388;
+  }
+  100% {
+    background-color: #B2F9FC;
+  }
+
+}
+
+
+main {
+  background: url(image/mask.jpg) no-repeat;
+  width: 358px;
+  height: 540px;  
+  border-radius: 1rem;
+  opacity: 1;
+  z-index: 5;
+  position: absolute;
+  top: 138px;
+  
+}
+.container {
+  max-width: 250px;
+  margin: auto;
+  text-align: center;
+
+  color: var(--gray);
+}
+
+.avatar {
+  width: auto;
+  margin: 4.6rem auto 0;
+
+  position: relative;
+}
+
+.avatar span {
+  position: absolute;
+  top: -15;
+  z-index: 1;
+}
+.avatar > img {
+  height: 11.5rem;
+  width: 10.25rem;
+  object-fit: cover;
+
+  clip-path: polygon(50% 0, 100% 23%, 100% 76%, 50% 100%, 0 76%, 0 23%);
+}
+p{
+  margin-top: 2rem;
+}
+
+ul{
+  margin-top: 2.5rem;
+
+  list-style: none;
+  padding: 0;
+
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+
+}
+a{
+  color: var(--gray);
+  text-decoration: none;
+
+  margin-top: 0.25rem;
+
+  display: flex;
+  gap: 0.75rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+h1{
+  font-size: 1.5rem;  
+  margin-top: 0.66rem;
+}
+
+#faixa{
+  position: relative;
+  z-index: 60;
+}
+
